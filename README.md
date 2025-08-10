@@ -1,4 +1,4 @@
-<img width="1920" height="995" alt="image" src="https://github.com/user-attachments/assets/4babe364-ce20-48b0-85c1-05e74ba44a7f" /># Recipes Frontend
+# Recipes Frontend
 
 Single-page React application that lets users perform **free-text searches** against a backend recipes API and view results in a responsive grid. It supports **client-side sorting** (by `cookTimeMinutes`) and **client-side filtering** (by `tags`). The app follows clean-code patterns (atomic design), uses environment variables for configuration, and demonstrates lazy-loading and responsive UI.
 
