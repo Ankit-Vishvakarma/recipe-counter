@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+<img width="1920" height="995" alt="image" src="https://github.com/user-attachments/assets/4babe364-ce20-48b0-85c1-05e74ba44a7f" /># Recipes Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Single-page React application that lets users perform **free-text searches** against a backend recipes API and view results in a responsive grid. It supports **client-side sorting** (by `cookTimeMinutes`) and **client-side filtering** (by `tags`). The app follows clean-code patterns (atomic design), uses environment variables for configuration, and demonstrates lazy-loading and responsive UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Demo / Screenshots
+<img width="1920" height="882" alt="image" src="https://github.com/user-attachments/assets/f57f0520-45c3-4b98-8fe4-cc979d17c0db" />
+<img width="1899" height="875" alt="image" src="https://github.com/user-attachments/assets/66931778-4243-4b9e-99b4-bf11a2fd28fa" />
+<img width="1920" height="995" alt="image" src="https://github.com/user-attachments/assets/947f78f4-ee2c-4ad2-a354-1af4747a98f7" />
+<img width="1920" height="984" alt="image" src="https://github.com/user-attachments/assets/8515145f-a698-4624-ba99-40f1a12b64cd" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Global search bar (Google-style) — free text search by recipe name, cuisine or any searchable field.
+- Searches trigger only after user types **at least 3 characters** and presses **Enter** or clicks **Search**.
+- Displays results in a responsive grid of recipe cards.
+- Client-side sorting by `cookTimeMinutes` (ascending / descending) without calling backend again.
+- Client-side filtering by recipe `tags` (OR semantics: recipe included if it contains any selected tag).
+- Clean error / empty-state messages and loading indicators.
+- Atomic component structure for reusability.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js v16+ (or latest LTS)
+- npm v8+ (or yarn)
+- A backend API that exposes a free-text recipe search endpoint (spring-boot)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting started
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone repo
+```bash
+git clone https://github.com/Ankit-Vishvakarma/recipe-counter.git
+cd recipe-counter
